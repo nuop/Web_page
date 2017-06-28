@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{background: #000000; text-align: center;font: 40px/100px "微软雅黑";}
+			h1{display: inline-block;color: rgba(255,255,255,0.3);background: -webkit-linear-gradient(-30deg,rgba(255,255,255,0) 100px,rgba(255,255,255,1) 180px,rgba(255,255,255,1) 240px,rgba(255,255,255,0) 300px) no-repeat -400px 0;
+			-webkit-background-clip: text;
+			}
+		
+			
+		</style>
+	</head>
+	<body>
+		<h1 class="">诺猪嘻嘻哈哈</h1>
+		<script>
+			var oH1 = document.getElementsByTagName('h1')[0];
+			var oTimer = null;
+			var iLeft = -400;
+			function toMove(){
+				oTimer = setInterval(function(){
+					iLeft+=10;
+					if(iLeft==600){
+						iLeft=-400;
+						clearInterval(oTimer);
+					}
+					oH1.style.backgroundPosition = iLeft +"px 0px";
+				},30)
+			}
+			toMove();
+			setInterval(function(){
+				toMove();
+			},5000)
+		</script>
+	</body>
+	
+</html>

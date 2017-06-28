@@ -1,0 +1,23 @@
+$(".nav-left").click(function(){
+	$(".nav-click-list").slideToggle(1000);
+});
+$(".nav-click-item1").mouseenter(function(){
+	$(".nav-click-item1").css("background-color","#fff");
+	$(".nav-ico1").hide();
+	$(".nav-click-list-hidden").show('slow');
+});
+$(".nav-click-item1").mouseleave(function(){
+	$(".nav-click-item1").css("background-color","#c7b682");
+	$(".nav-ico1").show();
+	$(".nav-click-list-hidden").hide('slow');
+});
+$(".nav-click-list-hidden").mouseenter(function(){
+	$(".nav-click-item1").css("background-color","#fff");
+	$(".nav-ico1").hide();
+	$(".nav-click-list-hidden").show('slow');
+});
+$(".nav-click-list-hidden").mouseleave(function(){
+	$(".nav-click-item1").css("background-color","#c7b682");
+	$(".nav-ico1").show();
+	$(".nav-click-list-hidden").hide('slow');
+});

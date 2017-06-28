@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body,ul,ol{margin: 0;padding: 0;}
+			li{list-style: none;}
+			.wrap{width: 1260px;margin: 100px auto;}
+			#picList{width:960px;height:300px;position: relative;perspective: 960px;}
+			#picList li{width:60px;height:300px;float: left;padding: 10px 0;-webkit-transform-style: preserve-3d;}
+			#picList a{width: 100%;height: 100%;position: absolute;left: 0;top: 0;}
+			#picList a:nth-of-type(1){background: url(img/banner/1.png) no-repeat;}
+			#picList a:nth-of-type(2){background: url(img/banner/1.png) no-repeat;}
+			
+			#picList a:nth-of-type(3){background: url(img/banner/1.png) no-repeat;}
+			
+			#btns li{width: 40px;height: 40px;background: #000;color: #fff;border-radius: 50%;font: italic 30px/40px arial;float: left;margin: 0 5px;text-align: center; }
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<ul id="picList">
+				<li>
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+					<span></span>
+					<span></span>
+				</li>
+			</ul>
+			<ol id="btns">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ol>
+		</div>
+	</body>
+</html>

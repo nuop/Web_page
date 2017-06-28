@@ -1,0 +1,25 @@
+.artical-header{
+	border-bottom: 1px solid #ECEAEA;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+.artical-top{}
+.artical-top a{
+	font-size: 14px;
+	color: #333;
+}
+.artical-header h3{
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 80px;
+}
+.artical-header ul li{
+	float: left;
+	color: #939393;
+	margin-right: 30px;
+}
+.artical-content{
+	margin-top: 10px;
+}
+.artical-footer{}
+

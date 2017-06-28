@@ -1,0 +1,198 @@
+.board-main{
+	padding: 20px;
+}
+.board-main h3{
+	font-weight: normal;
+	color: #34495E;
+	width: 300px;
+	text-align: center;
+	background-color: #CED2D5;
+	border-radius: 10px;
+	line-height: 30px;
+}
+.board-demo{
+	overflow: hidden;
+	margin-top: 20px;
+}
+.board-left{
+	overflow: hidden;
+	width: 600px;
+	float: left;
+	border-bottom: 2px dashed #CCCCCC;
+	border-top: 2px dashed #CCCCCC;
+	border-radius: 50px;
+	padding: 20px;
+}
+.board-left .boardinfo{
+	float: left;
+}
+.board-left img{
+	width: 150px;
+}
+.board-left h4{
+	width: 150px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 30px;
+	font-weight: normal;
+}
+.board-left span{
+	display: block;
+	width: 150px;
+	font-size: 14px;
+	color: #939393;
+	text-align: center;
+}
+.board-left p{
+	float: left;
+	margin:23px 0 0 23px;
+	height: 80px;
+	width: 380px;
+	padding: 20px;
+	border-radius: 30px;
+	border: 1px solid #2BB8AA;
+}
+.board-left strong{	
+	background: url(../img/edit.png) no-repeat 4px 0;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	width: 80px;
+	padding-left: 32px;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	border-radius: 5px;
+	margin:20px 0 0 10px;
+}
+.board-left .comment1{
+	margin-left: 200px;
+}
+.board-left strong:hover{
+	background: url(../img/edit2.png) #1ABC9C no-repeat 4px 0;
+	color: #fff;
+	cursor: pointer;
+}
+.board-right{
+	float: right;
+	background: #34495e;
+	border-radius: 30%;
+	padding: 30px;
+	width: 460px;
+	display: none;
+}
+.re-message ul{
+	padding: 5px;
+	overflow: hidden;
+}
+.re-message ul li{
+	float: left;
+	font-size: 14px;
+	
+}
+.re-message ol{
+	overflow: hidden;
+	margin-left: 150px;
+}
+.re-message ol li{
+	float: left;
+	font-size: 14px;
+	padding: 3px 10px;
+}
+.re-message ol li:hover{
+	background-color: #CED2D5;
+}
+.re-message ol li a{
+	color: #1ABC9C;
+}
+.re-message .re-name{
+	color: #CED2D5;
+	width: 88px;
+	text-align: center;
+}
+.re-message .re-content{
+	width: 260px;
+	color: #fff;
+	padding: 0 10px;
+}
+.re-message .re-time{
+	color: #CED2D5;
+}
+.re-message-input{
+	display: none;
+	margin-left: 200px;
+	margin-top: 20px;
+}
+.re-message-input input{
+	display: block;
+	height: 20px;
+	border-radius: 10px;
+	padding: 5px;
+	border: 2px solid #1ABC9C;
+}
+.re-message-input textarea{
+	display: block;
+	height: 100px;	
+	width: 300px;
+	border-radius: 10px;
+	padding: 5px;
+	border: 2px solid #1ABC9C;
+	margin-top: 10px;
+}
+.re-message-input button{
+	margin-top: 10px;	
+	height: 40px;
+	width: 60px;
+	border: 2px solid #1ABC9C;
+	padding: 5px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.board-input{
+	height: 250px;
+	width: 400px;
+	margin:20px 0 0 80px;
+	padding: 30px 30px 30px 50px;
+	border-left: 2px solid #9BDF70;
+	border-right: 2px solid #9BDF70;
+	border-radius: 100px;
+}
+.board-input h4{
+	font-weight: normal;
+	color: #9BDF70;
+	font-size: 20px;
+	padding: 5px;
+}
+.board-input input{
+	height: 20px;
+	border-radius: 10px;
+	padding: 10px;
+	border: 2px solid #9BDF70;
+}
+.board-input textarea{
+	height: 100px;	
+	width: 300px;
+	border-radius: 10px;
+	padding: 10px;
+	border: 2px solid #9BDF70;
+	margin-top: 10px;
+}
+.board-input button{
+	background: url(../img/comm.png) no-repeat 4px 2px;
+	height: 36px;
+	line-height: 36px;
+	width:116px;
+	padding-left: 32px;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 5px;
+	margin:10px 0 0 200px;
+	border: 0;
+	color: #9BDF70;
+}
+.board-input button:hover{
+	background: url(../img/comm2.png) #9BDF70 no-repeat 4px 2px;
+	cursor: pointer;
+	color: #333;
+}
+

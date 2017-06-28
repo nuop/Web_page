@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>个人简历</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<link rel="stylesheet" href="../css/resume.css" />
+		<link rel="stylesheet" href="../css/jquery.fullPage.css" />
+		
+		
+	</head>
+	<body>
+		<div class="main" id="dowebok">
+			<div class="header section">
+				<div class="wrap-top"></div>
+				<div id="header">				
+					<div class="header-l">
+						<div class="header-logo"></div>
+						<div class="header-logoinfo">一个有梦想的小前端,一个进击的程序猿</div>
+					</div>
+					<div class="header-r">
+						<div id="nav">
+							<ul>
+								<li><a href="index.html">主页</a></li>
+								<li><a href="artical.html">文章信息</a></li>							
+								<li><a href="webstudy.html">前端学习</a></li>
+								<li><a href="board.html">留言板</a></li>
+								<li><a class="nav-active" href="resume.html">个人简历</a></li>
+							</ul>
+						</div>
+						<div class="header-search"></div>
+					</div>
+				</div>
+				<div class="s_inner">
+					<h1>个人简历</h1>
+					<p>一个简单的博客</p>
+					<p>一位简单的程序员</p>
+					<p>一份简单的个人信息</p>
+				</div>
+				
+			</div>
+			<div class="section" id="section1">
+				<div class="s1-inner">
+					<h2>个人信息</h2>
+					<ul>
+						<li class="first">
+							<span>姓名</span>
+							<p>胡胜</p>
+						</li>
+						<li>
+							<span>邮箱</span>
+							<p>254614141@qq.com</p>
+						</li>
+						<li>
+							<span>学校</span>
+							<p>四川理工学院</p>
+						</li>
+						<li>
+							<span>职业</span>
+							<p>Web前端工程师</p>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="section" id="section2">			
+					<div class="section_inner">
+					<div class="s1-inner s2-inner">
+						<h2>掌握技术</h2>
+						<ul>
+							<li>
+								<span>HTML5/CSS3</span>
+								<p>网站基础，构建页面结构，实现布局和一些动画效果</p>
+							</li>
+							<li>
+								<span>JavaScript</span>
+								<p>完成页面交互和一系列复杂的操作</p>
+							</li>
+							<li>
+								<span>JQuery</span>
+								<p>JS的一种框架，用于开发更加省时省力，加快开发效率</p>
+							</li>
+							<li>
+								<span>PHP</span>
+								<p>后端开发语言，建立网站后台，对网站内容进行管理操作</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="section3">
+				<div class="section_inner">
+					<div class="s1-inner s3-inner">
+						<h2>大学历程</h2>
+						<ul>
+							<li>
+								<span>2014</span>
+								<p>初入大学，开始接触计算机方面的知识，对前端产生了兴趣，开始了初步的学习</p>
+							</li>
+							<li>
+								<span>2015</span>
+								<p>对前端知识有了系统的学习，参加了网页设计大赛，并取得了不错的成绩</p>
+							</li>
+							<li>
+								<span>2016</span>
+								<p>开始对前端的深层次知识进行学习，了解框架以及各种优化及兼容性</p>
+							</li>
+							<li>
+								<span>2017</span>
+								<p>开始实习，将前端作为自己的工作，开始实际的工程项目</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="../js/jquery-1.10.1.min.js" ></script>
+		<script type="text/javascript" src="../js/jquery.fullPage.min.js" ></script>
+		<script type="text/javascript" src="../js/index.js" ></script>
+		<script>
+			var oHs1=document.getElementById("hs1");
+			var oS1zz=document.getElementById("s1-zz");
+			var aDiv=oS1zz.getElementsByTagName("div");
+			var iDelay=200;
+			var oTimer=null;
+			var i=0;
+			var bOff=true;
+			oHs1.onclick=function()
+			{
+				if(oTimer)
+				{
+					return;
+				}
+				if(bOff)
+				{
+					i=0;
+					oTimer=setInterval(function(){
+						aDiv[i].className="show";
+						i++;
+						if(i==aDiv.length)
+						{
+							clearInterval(oTimer);
+							oTimer=null;
+							bOff=false;
+						}	
+					},iDelay);
+				}
+				else
+				{
+					i=aDiv.length-1;
+					oTimer=setInterval(function(){
+						aDiv[i].className="hide";
+						i--;
+						if(i<0)
+						{
+							clearInterval(oTimer);
+							bOff=true;
+							oTimer=null;
+						}	
+					},iDelay);
+				}
+			};
+		</script>
+		<script>
+		$(function(){
+			$('#dowebok').fullpage({
+				sectionsColor: ['#fff', '#dbddde', '#b2b3b3', '#626464'],
+				'navigation': true,
+			});
+		});
+		resumeShow();
+		</script>
+		
+	</body>
+</html>
